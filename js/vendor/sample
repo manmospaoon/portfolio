@@ -1,0 +1,10 @@
+ $(".animated infinite").waypoint(function(direction) {
+    if (direction === "down") {
+      $(this.element).addClass("fadeInUp");
+    }
+  }, { offset: "100%" }); 
+  
+ //   else if (direction === "up") {
+//      $(this.element).addClass("fadeOutUp");
+//    }
+//  }, { offset: "100%" });

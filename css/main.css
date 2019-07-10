@@ -1,0 +1,272 @@
+@charset "UTF-8";
+
+html {
+  font-size: 1em; /* 16px */
+  line-height: 1.5; /* 24px */
+}
+
+body {
+  color: #000;
+  background-color: #fff;
+  font-family: 'Droid Serif', YuGothic, '游ゴシック', sans-serif;
+}
+
+
+.animated {
+  /* アニメーションで表示させるため最初は非表示 */
+  opacity: 0;
+}
+
+.navbar {
+  font-family: 'Slabo 27px', YuGothic, '游ゴシック', sans-serif;
+}
+
+
+.showcase {
+  /* 左右中央に置く */
+  margin: 0 auto;
+
+  width: 70%;
+  max-width: 940px;
+}
+
+
+.top {
+  /* 子要素でposition:absoluteを使うため必要 */
+  position: relative;
+}
+
+.top {
+  /* 画面いっぱいに広げる */
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.top__title {
+  margin-bottom: 10px;
+  font-size: 3rem;
+  line-height: 77px;
+  letter-spacing: 4px;
+}
+
+.top__catchphrase {
+  font-size: 0.9rem;
+}
+
+
+.top__text-box {
+  /* 上下中央に置く */
+  position: relative;
+  top: 50%;
+  left: 0;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  text-align: center;
+  width: 100%;
+
+  font-weight: 100;
+}
+
+.about {
+  padding-top: 80px;
+  padding-bottom: 90px;
+}
+
+.kittens__phrase,
+.prepare__phrase,
+.gallery__phrase {
+  text-align: center;
+  font-size: 2.4rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  margin-bottom: 10%;
+}
+
+.about__title,
+.kittens__title,
+.prepare__title,
+.gallery__title {
+  margin-bottom: 10%;
+  text-align: center;
+  font-size: 2rem;
+  letter-spacing: 2px;
+  border: inset 3px #ff0000;
+}
+
+#mamoicon{
+  margin-top: 5%;
+  margin-bottom: 5%
+}
+
+.prof {
+  font-size: 1rem;
+  margin-left: 20%;
+}
+.prof dt {
+  float: left;
+  display: block;
+  width: 30%;
+
+}
+
+.prof dd {
+  float: right;
+  width: 70%;
+}
+.about__content{
+  padding-top: 5%;
+  font-size: 1.3rem;
+  letter-spacing: 5px;
+}
+
+/* works */
+.kittens {
+  padding-top: 82px;
+  padding-bottom: 92px;
+
+  /* 上から重ねる順に背景を指定 */
+  background: url(../img/kittens-bg-large.png), url(../img/kittens-bg-small.png), #fcecf5;
+}
+
+.prepare {
+  padding-top: 82px;
+  padding-bottom: 44px;
+  background-color: #D1EDFB;
+}
+
+.gallery {
+  padding-top: 82px;
+  padding-bottom: 92px;
+  background-color: #FAF7F0;
+  background-image: -webkit-linear-gradient(
+    top left,
+    #f0faf2,
+    #f0faf2 50%,
+    #fcecf5 50%,
+    #fcecf5
+  );
+  background-image: linear-gradient(
+    to bottom right,
+    #f0faf2,
+    #f0faf2 50%,
+    #fcecf5 50%,
+    #fcecf5
+  );
+}
+
+footer {
+  padding: 50px 0;
+  background-color: #fafaf3;
+  text-align: center;
+}
+
+
+/*
+ * 子犬、子猫の種類で使うタブ - ここから
+ */
+/* ulのデフォルトスタイルを消去 */
+.tabs__menu {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  text-align: center;
+}
+
+/* タブの基本スタイル */
+.tabs__menu li {
+  display: inline-block;
+  margin-bottom: 12px;
+  opacity: 0.5;
+
+  /* 各プロパティをふわっと変える演出 */
+  -webkit-transition: all .15s;
+  transition: all .15s;
+}
+
+
+/*
+ * 子犬、子猫の種類で使うタブ - ここまで
+ */
+
+
+/*
+ * Magnific Popupのフェードイン・フェードアウト - ここから
+ */
+/* オーバーレイする背景 初期状態 */
+.mfp-fade.mfp-bg {
+  opacity: 0;
+
+  -webkit-transition: all 0.15s ease-out;
+  transition: all 0.15s ease-out;
+}
+/* オーバーレイする背景 開始時アニメーション */
+.mfp-fade.mfp-bg.mfp-ready {
+  opacity: 0.8;
+}
+/* オーバーレイする背景 終了時アニメーション */
+.mfp-fade.mfp-bg.mfp-removing {
+  opacity: 0;
+}
+
+/* コンテンツ 初期状態 */
+.mfp-fade.mfp-wrap .mfp-content {
+  opacity: 0;
+
+  -webkit-transition: all 0.15s ease-out;
+  transition: all 0.15s ease-out;
+}
+/* コンテンツ 開始時アニメーション */
+.mfp-fade.mfp-wrap.mfp-ready .mfp-content {
+  opacity: 1;
+}
+/* コンテンツ 終了時アニメーション */
+.mfp-fade.mfp-wrap.mfp-removing .mfp-content {
+  opacity: 0;
+}
+/*
+ * Magnific Popupのフェードイン・フェードアウト - ここまで
+ */
+
+
+/* Bootstrapのsm以上の表示幅で適用されるスタイル */
+@media (min-width: 768px) {
+  .top__catchphrase {
+    font-size: 1.125rem;
+  }
+
+  .about__title,
+  .kittens__title,
+  .prepare__title,
+  .gallery__title {
+    font-size: 3rem;
+  }
+
+  .kittens__phrase,
+  .prepare__phrase,
+  .gallery__phrase {
+    font-size: 4rem;
+  }
+
+ 
+
+
+  
+}
+/* 印刷用スタイル */
+@media print {
+  .animated {
+    /* すべて表示 */
+    opacity: 1;
+  }
+}
+
+.image-gallery__item {
+  /* 1.1倍に拡大する */
+  transition: all 0.4s;
+}
+.image-gallery__item:hover {
+  transform: scale(1.1);
+  border-color: #ff2323;
+  border-width: 4px;
+}
