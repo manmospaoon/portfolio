@@ -9,8 +9,17 @@ body {
   color: #000;
   background-color: #fff;
   font-family: 'Droid Serif', YuGothic, '游ゴシック', sans-serif;
+  height: 100%;
 }
 
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #fff;
+}
 
 .animated {
   /* アニメーションで表示させるため最初は非表示 */
@@ -19,28 +28,28 @@ body {
 
 .navbar {
   font-family: 'Slabo 27px', YuGothic, '游ゴシック', sans-serif;
+  opacity: 0.7;
 }
-
 
 .showcase {
   /* 左右中央に置く */
   margin: 0 auto;
 
-  width: 70%;
+  width: 100%;
   max-width: 940px;
 }
 
 
-.top {
-  /* 子要素でposition:absoluteを使うため必要 */
-  position: relative;
-}
+/* top */
 
 .top {
   /* 画面いっぱいに広げる */
+  position: relative;
   width: 100%;
   height: 100vh;
   overflow: hidden;
+  background: 
+  linear-gradient(90deg, rgb(255, 255, 255), rgb(220, 220, 220));
 }
 
 .top__title {
@@ -51,9 +60,8 @@ body {
 }
 
 .top__catchphrase {
-  font-size: 0.9rem;
+  font-size: 1rem;
 }
-
 
 .top__text-box {
   /* 上下中央に置く */
@@ -64,30 +72,24 @@ body {
           transform: translateY(-50%);
   text-align: center;
   width: 100%;
-
   font-weight: 100;
 }
 
+
+/* about */
+
 .about {
+  height: 100%;
   padding-top: 80px;
   padding-bottom: 90px;
-}
-
-.kittens__phrase,
-.prepare__phrase,
-.gallery__phrase {
-  text-align: center;
-  font-size: 2.4rem;
-  font-weight: 700;
-  letter-spacing: 2px;
-  margin-bottom: 10%;
+  background: 
+  linear-gradient(90deg, rgb(220, 220, 220), rgb(255, 255, 255));
 }
 
 .about__title,
-.kittens__title,
-.prepare__title,
-.gallery__title {
-  margin-bottom: 10%;
+.timeline__title,
+.works__title {
+  margin-bottom: 5%;
   text-align: center;
   font-size: 2rem;
   letter-spacing: 2px;
@@ -103,57 +105,100 @@ body {
   font-size: 1rem;
   margin-left: 20%;
 }
+
+.prof_img {
+  margin-bottom: 10%;
+}
+
 .prof dt {
   float: left;
   display: block;
   width: 30%;
-
 }
 
 .prof dd {
   float: right;
   width: 70%;
 }
-.about__content{
+
+.about__content p{
   padding-top: 5%;
-  font-size: 1.3rem;
+  font-size: 1rem;
   letter-spacing: 5px;
+  line-height: 40px;
 }
+
+
+/* lerning */
+
+.cd-timeline {
+  padding-top: 82px;
+  padding-bottom: 92px;
+  background: 
+  linear-gradient(90deg, rgb(255, 255, 255), rgb(220, 220, 220));
+}
+
 
 /* works */
-.kittens {
-  padding-top: 82px;
-  padding-bottom: 92px;
 
-  /* 上から重ねる順に背景を指定 */
-  background: url(../img/kittens-bg-large.png), url(../img/kittens-bg-small.png), #fcecf5;
+.works {
+  padding-top: 80px;
+  padding-bottom: 90px;
+  background: 
+  linear-gradient(90deg, rgb(220, 220, 220), rgb(255, 255, 255));
 }
 
-.prepare {
-  padding-top: 82px;
-  padding-bottom: 44px;
-  background-color: #D1EDFB;
+.works_img {
+  width: 100%;
+  text-align: center;
+  margin-top: 10%;
 }
 
-.gallery {
-  padding-top: 82px;
-  padding-bottom: 92px;
-  background-color: #FAF7F0;
-  background-image: -webkit-linear-gradient(
-    top left,
-    #f0faf2,
-    #f0faf2 50%,
-    #fcecf5 50%,
-    #fcecf5
-  );
-  background-image: linear-gradient(
-    to bottom right,
-    #f0faf2,
-    #f0faf2 50%,
-    #fcecf5 50%,
-    #fcecf5
-  );
+.fas {
+  padding-top: 10px;
+  cursor: pointer;
+  color: grey;
 }
+
+.fa-chevron-up {
+  display: none;
+}
+
+.works_content {
+  text-align: center;
+  padding: 10px;
+  display: none;
+}
+
+.works_content p {
+  font-size: 1rem;
+  margin-bottom: 5%;
+  font-family: 
+  "Noto Sans Japanese", 游ゴシック, YuGothic, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", メイリオ, Meiryo, sans-serif;
+}
+
+.works_link {
+  color: #fff;
+  border-radius: 10%;
+  margin-bottom: 10%;
+}
+
+.demo {
+  background: -webkit-linear-gradient(-45deg, rgba(245, 141, 81, 0.7), rgba(224, 22, 76, 0.7));
+  padding: 10px 20px;
+  margin-right: 5%;
+}
+
+.github {
+  background-color: #000000;
+  padding: 10px 10px;
+}
+
+.png_icon {
+  height: 1.1rem;
+  padding-right: 1%;
+}
+
 
 footer {
   padding: 50px 0;
@@ -162,111 +207,45 @@ footer {
 }
 
 
-/*
- * 子犬、子猫の種類で使うタブ - ここから
- */
-/* ulのデフォルトスタイルを消去 */
-.tabs__menu {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-  text-align: center;
-}
 
-/* タブの基本スタイル */
-.tabs__menu li {
-  display: inline-block;
-  margin-bottom: 12px;
-  opacity: 0.5;
-
-  /* 各プロパティをふわっと変える演出 */
-  -webkit-transition: all .15s;
-  transition: all .15s;
-}
-
-
-/*
- * 子犬、子猫の種類で使うタブ - ここまで
- */
-
-
-/*
- * Magnific Popupのフェードイン・フェードアウト - ここから
- */
-/* オーバーレイする背景 初期状態 */
-.mfp-fade.mfp-bg {
-  opacity: 0;
-
-  -webkit-transition: all 0.15s ease-out;
-  transition: all 0.15s ease-out;
-}
-/* オーバーレイする背景 開始時アニメーション */
-.mfp-fade.mfp-bg.mfp-ready {
-  opacity: 0.8;
-}
-/* オーバーレイする背景 終了時アニメーション */
-.mfp-fade.mfp-bg.mfp-removing {
-  opacity: 0;
-}
-
-/* コンテンツ 初期状態 */
-.mfp-fade.mfp-wrap .mfp-content {
-  opacity: 0;
-
-  -webkit-transition: all 0.15s ease-out;
-  transition: all 0.15s ease-out;
-}
-/* コンテンツ 開始時アニメーション */
-.mfp-fade.mfp-wrap.mfp-ready .mfp-content {
-  opacity: 1;
-}
-/* コンテンツ 終了時アニメーション */
-.mfp-fade.mfp-wrap.mfp-removing .mfp-content {
-  opacity: 0;
-}
-/*
- * Magnific Popupのフェードイン・フェードアウト - ここまで
- */
-
-
-/* Bootstrapのsm以上の表示幅で適用されるスタイル */
-@media (min-width: 768px) {
+/* Bootstrapのsm以下の表示幅で適用されるスタイル */
+@media (max-width: 590px) {
   .top__catchphrase {
     font-size: 1.125rem;
   }
-
-  .about__title,
-  .kittens__title,
-  .prepare__title,
-  .gallery__title {
-    font-size: 3rem;
-  }
-
-  .kittens__phrase,
-  .prepare__phrase,
-  .gallery__phrase {
-    font-size: 4rem;
-  }
-
- 
-
-
   
+  .prof {
+    font-size: 1rem;
+    margin-left: 0;
+  }
+  
+  .about__content p {
+    padding-top: 40%;
+    font-size: 0.8rem;
+    letter-spacing: 5px;
+    line-height: 20px;
+  }
+  
+  .about__title,
+  .timeline__title,
+  .works__title{
+    font-size: 1.5rem;
+  }
+
+  .showcase {
+    width: 90%;
+  }
+  
+  .works_content p {
+  font-size: 12px;
+  padding-bottom: 5%;
+  }
 }
+
 /* 印刷用スタイル */
 @media print {
   .animated {
     /* すべて表示 */
     opacity: 1;
   }
-}
-
-.image-gallery__item {
-  /* 1.1倍に拡大する */
-  transition: all 0.4s;
-}
-.image-gallery__item:hover {
-  transform: scale(1.1);
-  border-color: #ff2323;
-  border-width: 4px;
 }

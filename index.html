@@ -2,23 +2,26 @@
 <html lang="ja">
   <head>
     <meta charset="utf-8">
-    <title>about and Kittens!</title>
+    <title>MAMORU TAKAYAMA -portfolio-</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Webフォント -->
     <link href="https://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Droid+Serif" rel="stylesheet">
-
+    <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/vendor/animate.css">
     <link rel="stylesheet" href="css/vendor/magnific-popup.css">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/main.css">
     <noscript>
       <!-- JavaScriptが無効化されている場合の追加スタイルシート -->
       <link rel="stylesheet" href="css/noscript.css">
     </noscript>
   </head>
-  <body data-spy="scroll" data-target="#navbar">
+  <body data-target="#navbar">
+    
+    <!--/.top-->
     <section class="top">
       <!-- ナビゲーションバー -->
       <nav class="navbar navbar-default navbar-fixed-top">
@@ -31,17 +34,15 @@
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
-
-            <!-- ホームリンク -->
-            <a class="navbar-brand" href="#"><span class="glyphicon glyphicon-heart" aria-hidden="true"></span></a>
           </div><!--/.navbar-header -->
 
           <!-- メニュー -->
           <div id="navbar" class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
               <li><a href="#top">TOP</a></li>
-              <li><a href="#about">about</a></li>
-              <li><a href="#kittens">Lerning Process</a></li>
+              <li><a href="#about">About me</a></li>
+              <li><a href="#timeline">Lerning Process</a></li>
+              <li><a href="#works">Works</a></li>
             </ul>
           </div><!--/.nav-collapse -->
         </div><!--/.container-fluid -->
@@ -51,18 +52,22 @@
         <h1 class="top__title">MAMORU TAKAYAMA</h1>
         <div class="top__catchphrase">portfolio</div>
       </div>
-    </section>
+    </section><!--top-- >
 
-    <!-- 子犬の種類 -->
+    <!-- about -->
     <section id="about" class="about">
       <h2 class="about__title animated">About me</h2>
-      <div class="showcase container-fluid tabs animated">
+      <div class="showcase container-fluid animated">
         <div class="row">
-          <div class="col-sm-12 col-md-6">
-            <div class="text-center">
+          <div class="about__prof col-sm-12 col-md-5">
+            
+            <!--プロフィールアイコン-->
+            <div class="prof_img text-center">
               <img id="mamoicon" src="img/icon.png" alt="hodacat web engineer" width="150" height="150">
             </div>
-            <div  class="prof">
+            
+            <!--プロフィール-->
+            <div class="prof">
               <dl>
                 <dt>名前:</dt>
                 <dd>Mamoru Takayama</dd>
@@ -71,126 +76,206 @@
                 <dt>趣味:</dt>
                 <dd>筋トレ, 読書</dd>
               </dl>
-            </div>
-          </div>
-          <div class="col-sm-12 col-md-6">
-            <div class="about__content">  
-              <p>近年GAFAを代表とするIT企業により、多くの人々の生活が変わってきたことを実感し、PC一つで世界を変える可能性のあるIT業界に興味を持ちました。<br>プログラミングスクールに通い学習を開始。これからどん欲に知識と経験を積み重ね、多くの人に影響を与えるようなサービスを作ることが目標です。</p>
-            </div>
-          </div>  
-  
-      </div><!--/.showcase -->
-    </section><!--/.about -->
-
-    <!-- 子猫の種類 -->
-    <section id="kittens" class="kittens">
-      <div class="kittens__phrase animated">子猫の種類</div>
-      <h2 class="kittens__title animated">Kittens</h2>
-      <div class="showcase showcase--rightpic container-fluid tabs animated">
-        <div class="row">
-          <!-- サムネイル -->
-          <div class="col-xs-12 col-sm-6">
-            <ul class="showcase__thumbnails tabs__menu">
-              <li><a href="#kittens-1"><img class="img-rounded" src="img/thumbnail/kitten1.jpg" width="60" height="60" alt="アメリカンショートヘア"></a></li>
-              <li><a href="#kittens-2"><img class="img-rounded" src="img/thumbnail/kitten2.jpg" width="60" height="60" alt="スコティッシュフォールド"></a></li>
-              <li><a href="#kittens-3"><img class="img-rounded" src="img/thumbnail/kitten3.jpg" width="60" height="60" alt="ベンガル"></a></li>
-              <li><a href="#kittens-4"><img class="img-rounded" src="img/thumbnail/kitten4.jpg" width="60" height="60" alt="ロシアンブルー"></a></li>
-            </ul><!--/.showcase__thumbnails -->
-          </div><!--/.pull-right -->
-
-          <!-- 拡大写真 -->
-          <div class="tabs__content pull-right col-xs-12 col-sm-6">
-            <section class="kittens-1">
-              <img class="img-rounded img-responsive" src="img/kitten1.jpg" width="500" height="500" alt="アメリカンショートヘア">
-            </section>
-            <section class="kittens-2">
-              <img class="img-rounded img-responsive" src="img/kitten2.jpg" width="500" height="500" alt="スコティッシュフォールド">
-            </section>
-            <section class="kittens-3">
-              <img class="img-rounded img-responsive" src="img/kitten3.jpg" width="500" height="500" alt="ベンガル">
-            </section>
-            <section class="kittens-4">
-              <img class="img-rounded img-responsive" src="img/kitten4.jpg" width="500" height="500" alt="ロシアンブルー">
-            </section>
-          </div><!--/.tabs__content -->
-
-          <!-- 説明文 -->
-          <div class="tabs__content col-xs-12 col-sm-6">
-            <section id="kittens-1">
-              <div class="showcase__details">
-                <h3 class="showcase__kind-name">アメリカンショートヘア</h3>
-                <p class="showcase__kind-description">
-                アメリカン・ショートヘアは、猫の品種。17世紀にメイフラワー号でアメリカに上陸したネコの子孫とされる。運動能力の高い、大きな脚を持つ中型の猫である。鼻・口の部分はほぼ四角い形をしており、寒さ、湿気、および表皮負傷からそれらを保護するために硬い毛皮を持つ。
-                </p>
-              </div>
-            </section>
-            <section id="kittens-2">
-              <div class="showcase__details">
-                <h3 class="showcase__kind-name">スコティッシュフォールド</h3>
-                <p class="showcase__kind-description">
-                スコティッシュフォールドは、イギリスにその起源を有する猫の一品種。スコットランドで発見された突然変異の猫の個体から発生したこの品種は、折れ曲がったその独特の耳を何よりも際立った特徴としている。
-                </p>
-              </div>
-            </section>
-            <section id="kittens-3">
-              <div class="showcase__details">
-                <h3 class="showcase__kind-name">ベンガル</h3>
-                <p class="showcase__kind-description">
-                ベンガルは、ネコの品種のひとつである。野生のヤマネコと短毛種のイエネコを交配して作られた。原産国はアメリカ。短毛種。頭は比較的小さく耳は比較的大きく、丸みのあるくさび型をしている。鼻は幅広。目は少しつり目気味で、丸い形をしている。
-                </p>
-              </div>
-            </section>
-            <section id="kittens-4">
-              <div class="showcase__details">
-                <h3 class="showcase__kind-name">ロシアンブルー</h3>
-                <p class="showcase__kind-description">
-                ロシアンブルーは短毛種であり、毛の色はブルー（猫の場合、グレーの被毛を指す）によるソリッド・カラー。また尻尾にゴースト・タビーが見られることもある。アイカラーはグリーン、目の形はラウンド型、体形はフォーリン・タイプである。
-                </p>
-              </div>
-            </section>
-          </div><!--/.tabs__content -->
+            </div><!--/.prof-->
+          </div><!--about__prof-->
+          
+          <!--プロフィール文-->
+          <div class="about__content col-sm-12 col-md-7">  
+            <p>近年GAFAを代表とするIT企業により、多くの人々の生活が変わってきたことを実感し、PC一つで世界を変える可能性のあるIT業界に興味を持ちました。<br>プログラミングスクールに通い学習を開始。これからどん欲に知識と経験を積み重ね、多くの人に影響を与えるようなサービスを作ることが目標です。</p>
+          </div><!--about__content-->
+          
         </div><!--/.row -->
       </div><!--/.showcase -->
-    </section><!--/.kittens -->
+    </section><!--/.about -->
     
-    
-    <section id="about" class="about">
-      <h2 class="about__title animated">About me</h2>
-      <div class="showcase container-fluid tabs animated">
+    <!-- /.cd-timeline -->
+    <section id="timeline" class="cd-timeline js-cd-timeline">
+      <h2 class="timeline__title animated">Lerning process</h2>
+      <div class="container max-width-lg cd-timeline__container">
+        <div class="cd-timeline__block">
+          <div class="cd-timeline__img cd-timeline__img--pen">
+            <img src="img/cd-icon-pencil.svg" alt="pencil">
+          </div> <!-- /.cd-timeline__img -->
+  
+          <div class="cd-timeline__content text-component">
+            <h4>オンライン学習ツール Progate 学習開始。</h4>
+            <div class="color-contrast-medium">
+              <p>学習言語</p>
+              <div class="col-sm-12 col-md-4">
+                <ul>
+                  <li>HTML</li>
+                  <li>CSS</li>
+                </ul>
+              </div>
+              <div class="col-sm-12 col-md-4">
+                <ul>
+                  <li>Ruby</li>
+                  <li>Ruby on Rails</li>
+                </ul>
+              </div>
+            </div><!--/.color-contrast-medium-->
+  
+            <div class="flex justify-between items-center">
+              <span class="cd-timeline__date">2019年 4月</span>
+            </div>
+          </div> <!-- /.cd-timeline__content -->
+        </div> <!-- /.cd-timeline__block -->
+  
+        <div class="cd-timeline__block">
+          <div class="cd-timeline__img cd-timeline__img--pc1">
+            <img src="img/cd-icon-pc.svg" alt="pc">
+          </div> <!-- /.cd-timeline__img -->
+  
+          <div class="cd-timeline__content text-component">
+            <h4>プログラミングスクールTechAcademy 受講開始。</h4>
+            <p>Webアプリケーションコース</p>
+            <div class="color-contrast-medium">
+              <p>学習言語</p>
+              <div class="col-sm-12 col-md-4">
+                <ul>
+                  <li>HTML</li>
+                  <li>CSS</li>
+                  <li>Bootstrap</li>
+                </ul>
+              </div>
+              <div class="col-sm-12 col-md-4">
+                <ul>
+                  <li>Ruby</li>
+                  <li>Ruby on Rails</li>
+                  <li>MySQL</li>
+                </ul>
+              </div>
+            </div><!--/.color-contrast-medium-->
+  
+            <div class="flex justify-between items-center">
+              <span class="cd-timeline__date">2019年 5月～6月</span>
+            </div>
+          </div> <!-- /.cd-timeline__content -->
+        </div> <!-- /.cd-timeline__block -->
+  
+        <div class="cd-timeline__block">
+          <div class="cd-timeline__img cd-timeline__img--pc2">
+            <img src="img/cd-icon-pc.svg" alt="pc2">
+          </div> <!-- cd-timeline__img -->
+  
+          <div class="cd-timeline__content text-component">
+            <h4>プログラミングスクールTechAcademy</h4>
+            <p>フロントエンドコース</p>
+            <div class="color-contrast-medium">
+              <p>学習言語</p>
+              <div class="col-sm-12 col-md-4">
+                <ul>
+                  <li>Javascript</li>
+                  <li>jQuery</li>
+                </ul>
+              </div>
+              <div class="col-sm-12 col-md-4">
+                <ul>
+                  <li>Baas</li>
+                  <li>Firebase</li>
+                </ul>
+              </div>  
+            </div><!--/.color-contrast-medium-->
+            
+            <div class="flex justify-between items-center">
+              <span class="cd-timeline__date">2019年 6月～7月</span>
+            </div>
+          </div> <!-- /.cd-timeline__content -->
+        </div> <!-- /.cd-timeline__block -->
+  
+      </div>
+    </section> <!-- /.cd-timeline -->
+
+    <!--/.works-->
+    <section id="works" class="works">
+      <h2 class="works__title animated">Works</h2>
+      <div class="showcase container-fluid animated">
         <div class="row">
-          <div class="col-sm-12 col-md-6">
-            <div class="text-center">
-              <img id="mamoicon" src="img/icon.png" alt="hodacat web engineer" width="150" height="150">
+          
+          <div class="messageboard block col-md-10 col-md-offset-1">
+            <div class="works_img">
+              <img src="img/messageboard.png">
+              <i class="fas fa-chevron-down fa-2x"></i>
+              <i class="fas fa-chevron-up fa-2x"></i>
             </div>
-            <div  class="prof">
-              <dl>
-                <dt>名前:</dt>
-                <dd>Mamoru Takayama</dd>
-                <dt>出身地:</dt>
-                <dd>福岡県</dd>
-                <dt>趣味:</dt>
-                <dd>筋トレ, 読書</dd>
-              </dl>
+            <div class="works_content">
+              <p>TechAcademyのWebアプリケーションコースで、Railsの学習過程で作成しました。</p>
+              <p>メッセージの投稿、編集、削除機能をRailsで作成、Bootstrapを使いテーブルやボタンをデザインしました。</p>
+              <p>
+                <a href="https://message-board-35151992.herokuapp.com" class="works_link demo">MessageBoard</a>
+                <a href="https://github.com/manmospaoon/message-board" class="works_link github"><img src="img/github.png" class="png_icon">GitHub</a>
+              </p>
+            </div><!--/.works_content-->
+          </div><!--/.messageboard-->
+          
+          <div class="aruaru block col-md-10 col-md-offset-1">
+            <div class="works_img">
+              <img src="img/aruaru.png">
+              <i class="fas fa-chevron-down fa-2x"></i>
+              <i class="fas fa-chevron-up fa-2x"></i>
             </div>
-          </div>
-          <div class="col-sm-12 col-md-6">
-            <div class="about__content">  
-              <p>近年GAFAを代表とするIT企業により、多くの人々の生活が変わってきたことを実感し、PC一つで世界を変える可能性のあるIT業界に興味を持ちました。<br>プログラミングスクールに通い学習を開始。これからどん欲に知識と経験を積み重ね、多くの人に影響を与えるようなサービスを作ることが目標です。</p>
+            <div class="works_content">
+              <p>TechAcademyのWebアプリケーションコースでの最終課題のオリジナルサイト作成。</p>
+              <p>日常にある様々な「あるある」を投稿できるWebアプリケーションを作りました。</p>
+              <p>お題とあるあるの投稿、編集機能に加え、ユーザー登録、ログイン機能、評価機能も付けました。</p>
+              <p>それぞれの機能のリレーションを書くのに苦労しました。また複数の画面偏移に苦戦しながらもなんとか形にできました。</p>
+              <p>
+                <a href="https://aruaru-app.herokuapp.com" class="works_link demo">あるある</a>
+                <a href="https://github.com/manmospaoon/aruaru-git" class="works_link github"><img src="img/github.png" class="png_icon">GitHub</a>
+              </p>
+            </div><!--/.works_content-->
+          </div><!--/.aruaru-->
+          
+          <div class="mytrips block col-md-10 col-md-offset-1">
+            <div class="works_img">
+              <img src="img/mytrips.png">
+              <i class="fas fa-chevron-down fa-2x" alt></i>
+              <i class="fas fa-chevron-up fa-2x"></i>
             </div>
-          </div>  
+            <div class="works_content">
+              <p>TechAcademyのフロントエンドコースでの最終課題のオリジナルサイト作成。</p>
+              <p>これまで海外旅行先で撮影した写真をギャラリーにしてまとめてみました。</p>
+              <p>モノクロ写真が好きなので、すべてモノクロに編集し、サイト内も極力色を付けないようにデザインしました。</p>
+              <p>色が少ない為、単調になりがちなのを、jQueryなどを使いアニメーションで動きを付けました。</p>
+              <p>
+                <a href="https://github.com/manmospaoon/my-trip" class="works_link github"><img src="img/github.png" class="png_icon">GitHub</a>
+              </p>
+            </div><!--/.works_content-->
+          </div><!--/.mytrips-->
+          
+          <div class="portfolio block col-md-10 col-md-offset-1">
+            <div class="works_img">
+              <img src="img/portfolio.png">
+              <i class="fas fa-chevron-down fa-2x" alt></i>
+              <i class="fas fa-chevron-up fa-2x"></i>
+            </div>
+            <div class="works_content">
+              <p>自分についてのプロフィール、また、これまでの制作物をまとめるために作成。</p>
+              <p>これまで学んできたことをわかりやすく伝えられるようにデザインしました。</p>
+              <p>
+                <a href="https://oliveseal4.sakura.ne.jp" class="works_link github"><img src="img/github.png" class="png_icon">GitHub</a>
+              </p>
+            </div><!--/.works_content-->
+          </div><!--/.portfolio-->
+        </div><!--/.row -->
   
       </div><!--/.showcase -->
-    </section><!--/.about -->
+    </section><!--/.portfolio -->
+    
+    
+    
+    
+    
     <!-- フッター -->
     <footer>
-      &copy; 2016 about and Kittens
+      &copy; 2019 Mamoru Takayama -portfolio-
     </footer>
 
     <script src="js/vendor/jquery-2.2.4.min.js"></script>
     <script src="bootstrap/js/bootstrap.min.js"></script>
     <script src="js/vendor/jquery.waypoints.min.js"></script>
-    <script src="js/vendor/jquery.magnific-popup.min.js"></script>
     <script src="js/vendor/mobile-detect.min.js"></script>
+    <script src="js/vendor/timeline.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>
