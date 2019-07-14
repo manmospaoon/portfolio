@@ -138,6 +138,10 @@ a:hover {
   linear-gradient(90deg, rgb(255, 255, 255), rgb(220, 220, 220));
 }
 
+.timeline__part {
+  font-size: 1.2rem;
+  color: #444444;
+}
 
 /* works */
 
@@ -210,6 +214,10 @@ footer {
 
 /* Bootstrapのsm以下の表示幅で適用されるスタイル */
 @media (max-width: 590px) {
+  .top__title {
+    font-size: 2rem;
+  }
+  
   .top__catchphrase {
     font-size: 1.125rem;
   }
@@ -236,6 +244,18 @@ footer {
     width: 90%;
   }
   
+  .timeline__part {
+  font-size: 0.8rem;
+  }
+  
+  .color-contrast-medium {
+    font-size: 0.7rem;
+  }
+  
+  .cd-timeline__date {
+    font-size: 0.7rem; 
+    float: right;
+  }
   .works_content p {
   font-size: 12px;
   padding-bottom: 5%;
